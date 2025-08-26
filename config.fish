@@ -15,4 +15,5 @@ if status is-interactive
         end
     end
 
+    set -g EDITOR "nvim"
 end
