@@ -9,7 +9,8 @@ if status is-interactive
     # * Is not run while inside tmux
     if status --is-interactive; and not set -q TMUX
         if type -q fastfetch
-            fastfetch
+            # fastfetch
+            kitten icat --align=left /home/andrew/Pictures/musashi/NicoCuu/Middle-scaled.gif | fastfetch --raw - --logo-width 32 --logo-height 26
         else if type -q neofetch
             neofetch
         end
